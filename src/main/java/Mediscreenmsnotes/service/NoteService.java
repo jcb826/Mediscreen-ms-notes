@@ -4,6 +4,9 @@ import Mediscreenmsnotes.model.Note;
 import Mediscreenmsnotes.repository.NoteRepository;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
+import java.util.List;
+
 @Service("NoteService")
 public class NoteService {
 
@@ -16,6 +19,13 @@ public class NoteService {
     public Note createNote(Note note ) {
 
         return noteRepository.save(note);
+    }
+
+
+    public List<Note> findAllNotes() {
+
+        return noteRepository.findAll();
+
     }
 
 
