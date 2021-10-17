@@ -4,7 +4,6 @@ import Mediscreenmsnotes.model.Note;
 import Mediscreenmsnotes.repository.NoteRepository;
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
 import java.util.List;
 
 @Service("NoteService")
